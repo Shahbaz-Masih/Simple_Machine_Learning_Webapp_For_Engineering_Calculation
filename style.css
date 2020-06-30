@@ -1,0 +1,111 @@
+
+
+html { width: 100%; height:100%; overflow:hidden; }
+
+body {
+
+
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	text-align:center;
+	letter-spacing:1.2px;
+	background: #092756;
+	color: #fff;
+
+
+}
+.main1 {
+
+	position: absolute;
+	top: 35%;
+	left: 45%;
+	margin: -200px 0 0 -150px;
+	width:400px;
+	height:1000px;
+
+}
+
+.main1 h1 { color: #ffffff; text-shadow: 0 0 10px rgba(0,0,0,0.3); letter-spacing:1px; text-align:center; }
+
+input {
+	text-align:center;
+	width: 100%;
+	margin-bottom: 10px;
+	background: rgba(0,0,0,0.3);
+	border: none;
+	outline: none;
+	padding: 10px;
+	font-size: 20px;
+	color: white;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.3);
+	border: 1px solid rgba(0,0,0,0.3);
+	border-radius: 4px;
+	box-shadow: inset 0 -5px 45px rgba(100,100,100,0.2), 0 1px 1px rgba(255,255,255,0.2);
+	-webkit-transition: box-shadow .5s ease;
+	-moz-transition: box-shadow .5s ease;
+	-o-transition: box-shadow .5s ease;
+	-ms-transition: box-shadow .5s ease;
+	transition: box-shadow .5s ease;
+
+	color: #FFFFFF;
+	width:400px;
+
+}
+input [type=text], select{
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        padding-bottom: 50px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 0px;
+        box-sizing: border-box;
+        font-size: 20px;
+
+    }
+input:hover { background-color: white; color: black;
+
+}
+select {
+	padding-bottom: 16px;
+	margin-bottom:16px;
+	width: 420px;
+	background-color:white;
+	text-align:center;
+	outline: 0px solid black;
+}
+
+
+select option {
+    line-height: 20px;
+	margin-bottom: 10px;
+}
+select:hover {background-color: lightgrey; color: black; box-shadow: 0 5px black;}
+
+button {
+  width: 420px;
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+    cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: lightgrey;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 8px black;
+}
+
+button:hover {background-color: grey; color: black; box-shadow: 0 9px black;}
+
+button:active {
+  background-color: grey;
+  box-shadow: 0 5px black;
+  transform: translateY(4px);
+
+}
+prediction_text {
+	font-size: 100px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Plant Power Output</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+
+
+<body>
+
+
+
+<div class="main1" >
+     <h1>Predict Power Output of Combined Cycle Power Plant </h1>
+
+     <!-- Form to receive input to ML model
+          -->
+
+    <form action="/predictOutput" method="post">
+
+        <select id="models" name="models" required>
+<!-- empty string for "choose ML model option to "required" parameter to take action -->
+            <option value="">Choose Machine Learning Model</option>
+  <option value="Linear">1. Linear Regression Model</option>
+  <option value="DecisionTree">2. Decision Tree Regressor</option>
+            <option value="RandomForest">3. Random Forest Regressor</option>
+
+</select>
+<!-- no values less than zero, any step to allow float/decimal values and required input to submit the form -->
+    	<input type="number" min="0"  step="any" name="AT" placeholder="Enter AT in °C (Range ~ 2-38)" required  />
+        <input type="number" min="0"  step="any" name="V" placeholder="Enter V in cmHg (Range ~ 25-82)" required />
+		<input type="number" min="0"  step="any" name="AP" placeholder="Enter AP in mmHg (Range ~ 993-1033)" required  />
+        <input type="number" min="0"  step="any" name="RH" placeholder="Enter RH in %age (Range ~ 25-82)" required />
+<button class="button" type = submit>Predict Power Output</button>
+
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
